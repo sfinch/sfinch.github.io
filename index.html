@@ -3,63 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Sean and Heather 2015 | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <script src="js/vendor/modernizr.js"></script>
+
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includeTop").load("top.html"); 
+    });
+    </script> 
+    <script> 
+    $(function(){
+      $("#includeBottom").load("bottom.html"); 
+    });
+    </script> 
+
   </head>
   <body>
+    
+  <div id="includeTop"></div> 
 
-     <div class="row">
-    <div class="large-3 columns">
-      <h1><img src="http://placehold.it/400x100&text=Logo"/></h1>
-    </div>
-    <div class="large-9 columns">
-      <ul class="right button-group">
-      <li><a href="#" class="button">Link 1</a></li>
-      <li><a href="#" class="button">Link 2</a></li>
-      <li><a href="#" class="button">Link 3</a></li>
-      <li><a href="#" class="button">Link 4</a></li>
-      </ul>
-     </div>
-   </div>
-  
- 
- 
- 
- 
   <div class="row">
     <div class="large-12 columns">
-    <div id="slider">
-      <img src="http://placehold.it/1000x400&text=[ img 1 ]"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.your-class').slick({
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                fade: true,
+                speed: 500,
+                arrows: true
+            });
+        });
+    </script>
+
+    <div>
+      <div class="your-class">
+        <div > <img src="img/1.jpg" alt="bkj"></div>
+        <div > <img src="img/2.jpg" alt="bkj"></div>
+        <div > <img src="img/3.jpg" alt="bkj"></div>
+        <div > <img src="img/4.jpg" alt="bkj"></div>
+        <div > <img src="img/5.jpg" alt="bkj"></div>
+        <div > <img src="img/6.jpg" alt="bkj"></div>
+        <div > <img src="img/7.jpg" alt="bkj"></div>
+      </div>
     </div>
-    
-    <hr/>
     </div>
   </div>
-  
- 
- 
-  <div class="row">
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]"/>
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]"/>
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]"/>
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-  
-    </div>
-    
+  <hr/>
  
 <div class="row">
     <div class="large-12 columns">
@@ -79,28 +77,9 @@
       
     </div>
   </div>
- 
    
   
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr/>
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
-  </footer>
-    
+  <div id="includeBottom"></div>
 
   </body>
 </html>
