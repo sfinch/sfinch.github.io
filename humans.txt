@@ -4,5 +4,9 @@
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
+  Components: jQuery, Reveal
   Software: Sublime, Git, Sass
+
+Site made By Sean Finch
+Carousel by Slick (http://kenwheeler.github.io/slick/)
+
